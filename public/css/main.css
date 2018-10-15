@@ -1,0 +1,378 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 15, 2018, 1:29:41 PM
+    Author     : Rai Omido
+*/
+
+/*==================================
+ * GENERAL STYLES
+ ==================================*/
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vh-80 {
+    height: 80vh;
+}
+
+.vh-70 {
+    height: 70vh;
+}
+
+/*==================================
+ * INTRO SECTION
+ ==================================*/
+section#intro {
+    background-image: url(../images/home.jpg);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*==================================
+ * PARTNERS SECTION
+ ==================================*/
+#partners {
+
+}
+
+#partners .partner {
+
+}
+#partners .owl-item {
+    border: 1px solid #F8F8F8;
+    border-radius: 3px;
+}
+
+#partners .owl-nav {
+    display: none;
+}
+
+#partners .owl-dots {
+    margin: 0 auto;
+}
+
+#partners .partner img{
+    width: 100%;
+    height: 100px;
+}
+
+/*==================================
+ * RECENT PROJECTS SECTION
+ ==================================*/
+#recent-projects {
+    background-color: #efefef;
+}
+.recent-projects-categories{ 
+    padding: 10px 0;
+}
+ul.cat {
+    padding-left: 0;
+}
+ul.cat li{
+    display: inline-block;
+    padding: 8px;
+    /*    border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #999;
+        padding: 8px 17px;
+         display: block; 
+        background-color: transparent;
+        text-decoration: none;    */
+}
+ul.cat li ol.type {
+    margin: 0;
+    padding: 0;
+}
+ul.cat li ol.type li{
+    display: inline-block;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #999;
+    padding: 8px 17px;
+    /* display: block; */
+    background-color: transparent;
+    text-decoration: none;    
+}
+ul.cat li ol.type li:hover{
+    border: 1px solid #844b83;
+    color: #844b83;
+}
+#recent-projects li.ml-auto {
+    margin-top: 10px;
+}
+ol.type li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+ol.type li a{ color: #222222}
+ol.type li:hover a{ color: #844b83}
+ol.type li a.active { color: #844b83; }
+.isotope-item { z-index: 2 }
+.isotope-hidden.isotope-item { z-index: 1 }
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope-item {
+    margin-right: -1px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.isotope {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+.project-item{
+    margin-bottom: 30px;
+}
+.project-item .hover-bg{
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+#project-items i.fa {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #FFF;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    color: #FFF;
+}
+
+/**
+ * COMPONENT HOVER-BG
+**/
+.hover-bg {
+    height: 100%;
+    width: 100%;
+}
+.hover-bg .hover-text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: #844b83;
+    padding: 25% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.hover-bg .hover-text>h4{
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>h4{
+    opacity: 1;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.hover-bg .hover-text>i{
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>i{
+    opacity: 1;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.hover-bg:hover .hover-text{
+    opacity: 1;
+}
+
+/*==================================
+ * TESTIMONIALS SECTION
+ ==================================*/
+.bg-theme {
+    background-color: #844b83;
+}
+
+#testimonials .testimonial-col {
+    
+}
+
+#testimonials .testimonial-col .testimonial-image{
+    margin-bottom: 40px;
+}
+
+#testimonials .testimonial-col .testimonial-body{
+    box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.3);
+}
+
+#testimonials .testimonial-col .testimonial-body .d-flex{
+    min-height: 300px;
+    height: 300px;
+}
+
+#testimonials .testimonial-col .testimonial-details{
+    /*box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.3);*/
+}
+
+#testimonials .testimonial-col .u-name{
+    margin: 0;
+}
+
+#testimonials .testimonial-col .special-sub-title{
+    width: 100%;
+}
+
+#testimonials .testimonial-col .u-name{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#testimonials .testimonial-col .testimonial-image img{
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+}
+
+#testimonials .testimonial-col .special-sub-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.testimonials-carousel  .owl-prev {
+    width: 25px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    display: block!important;
+    border:0px solid black;
+    background: #ffc820!important;
+}
+
+.testimonials-carousel .owl-next {
+    width: 25px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    display: block!important;
+    border:0px solid black;
+    background: #ffc820!important;
+}
+
+.testimonials-carousel .owl-theme .owl-nav [class*=owl-] span{
+    transform : scale(1,6); 
+    color: #fff;    
+}
+
+/**====================================
+ SOCIAL LINKS
+**===================================**/
+.social-links {
+    
+}
+
+.social-links i {
+        border: 2px solid #977bae;
+        color: #977bae;
+        width: 37px;
+        height: 37px;
+        padding: 7px 5px;
+        text-align: center;
+}
+
+.social-links i:hover {
+        border: 2px solid #977bae;
+        color: #FFF;
+        background: #977bae;
+}
+
+.social-links [class*="facebook"]{
+    border: 2px solid #3b5998;
+    color: #3b5998;
+}
+
+.social-links [class*="facebook"]:hover{
+    border-color: #3b5998;
+    background: #3b5998;
+    color: #FFF;;
+}
+
+.social-links [class*="twitter"]{
+    border: 2px solid #00aced;
+    color: #00aced;    
+}
+
+.social-links [class*="twitter"]:hover{
+    border-color: #00aced;
+    background: #00aced;
+    color: #FFF;
+}
+
+.social-links [class*="google"]{
+    border: 2px solid #dd4b39;
+    color: #dd4b39;    
+}
+
+.social-links [class*="google"]:hover{
+    border-color: #dd4b39;
+    background: #dd4b39;
+    color: #FFF;
+}
+
+.social-links [class*="youtube"]{
+    border: 2px solid #bb0000;
+    color: #bb0000;    
+}
+
+.social-links [class*="youtube"]:hover{
+    border-color: #bb0000;
+    background: #bb0000;
+    color: #FFF;
+}
+
+/**====================================
+ FOOTER SECTION
+**===================================**/
+footer {
+    color: #b9b9b9;
+    text-align: center;
+}
+
+footer .item-title {
+    color: #eaeaea;
+}
+
+footer .footer-main {
+    background: #1e1f20;
+    padding: 40px 0;
+}
+
+footer .footer-credits {
+    background: #1a1a1b;
+}
